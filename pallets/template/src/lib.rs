@@ -60,6 +60,16 @@ mod benchmarking;
 pub mod weights;
 pub use weights::*;
 
+use plonky2::{
+	plonk::{
+		proof::ProofWithPublicInputs,
+		circuit_data::{VerifierCircuitData, CommonCircuitData},
+	},
+	field::{goldilocks_field::GoldilocksField, types::Field64, types::PrimeField64},
+	util::serialization::{DefaultGateSerializer, Buffer}
+};
+
+
 // All pallet logic is defined in its own module and must be annotated by the `pallet` attribute.
 #[frame_support::pallet]
 pub mod pallet {
