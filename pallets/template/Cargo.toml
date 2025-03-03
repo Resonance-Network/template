@@ -22,7 +22,7 @@ scale-info = { features = [
 frame-benchmarking = { optional = true, workspace = true }
 frame-support.workspace = true
 frame-system.workspace = true
-plonky2 = { version = "1.0.0", default-features = false }
+plonky2 = { git="https://github.com/Resonance-Network/plonky2", default-features = false, features = ["no_random"] }
 
 [dev-dependencies]
 sp-core = { default-features = true, workspace = true }
