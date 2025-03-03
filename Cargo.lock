@@ -2588,10 +2588,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c4567c8db10ae91089c99af84c68c38da3ec2f087c3f82960bcdbf3656b6f4d7"
 dependencies = [
  "cfg-if",
- "js-sys",
  "libc",
  "wasi",
- "wasm-bindgen",
 ]
 
 [[package]]
@@ -5628,12 +5626,10 @@ checksum = "953ec861398dccce10c670dfeaf3ec4911ca479e9c02154b3a215178c5f566f2"
 [[package]]
 name = "plonky2"
 version = "1.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "60de46200db60187139de3ba03e63701aec4af50b94cd586ca37a02f7ccf73a2"
+source = "git+https://github.com/Resonance-Network/plonky2#80a10007d8359b54843acb826097561859a6b621"
 dependencies = [
  "ahash",
  "anyhow",
- "getrandom",
  "hashbrown 0.14.5",
  "itertools 0.11.0",
  "keccak-hash",
@@ -5651,14 +5647,12 @@ dependencies = [
 [[package]]
 name = "plonky2_field"
 version = "1.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b3ddfe8817d0c5c2d4557979c51c5253dab1b555ecc19833e5b7ea7dd86f39b8"
+source = "git+https://github.com/Resonance-Network/plonky2#80a10007d8359b54843acb826097561859a6b621"
 dependencies = [
  "anyhow",
  "itertools 0.11.0",
  "num",
  "plonky2_util",
- "rand",
  "serde",
  "static_assertions",
  "unroll",
@@ -5667,14 +5661,12 @@ dependencies = [
 [[package]]
 name = "plonky2_maybe_rayon"
 version = "1.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9e1e554181dc95243b8d9948ae7bae5759c7fb2502fed28f671f95ef38079406"
+source = "git+https://github.com/Resonance-Network/plonky2#80a10007d8359b54843acb826097561859a6b621"
 
 [[package]]
 name = "plonky2_util"
 version = "1.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c32c137808ca984ab2458b612b7eb0462d853ee041a3136e83d54b96074c7610"
+source = "git+https://github.com/Resonance-Network/plonky2#80a10007d8359b54843acb826097561859a6b621"
 
 [[package]]
 name = "polkavm"
